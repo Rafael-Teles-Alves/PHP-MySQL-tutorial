@@ -1,0 +1,34 @@
+<?php
+// Iniciando PHP Para Comunicar Com MySQL
+
+
+// Precisamos Passar As Seguintes Variaveis Com Dados Do Nosso Banco MySQL
+
+$host ="localhost"; // Endereço Do Servidor 
+$username ="root"; // Nome De Usuario Do Banco De Dados
+$password =""; // Senha Do Danco
+$database ="testebanco"; // Nome Do Banco De Dados
+
+
+// Criando Uma Conexão Com Nosso Banco De Dados 
+$conexao = new mysqli($host, $username, $password, $database);
+
+
+// Aqui Vamos Verificar Se Nossa Conexão Está Estabeleciada Corretamente
+
+// 1° Vamos Passar A Seguinte Pergunta Tem Algum Erro ?
+if ($conexao ->connect_error) {
+    echo"Erro De Conexão";
+}
+
+// Se Não Imprima Na Tela Conexão Estábelecida Corretamente
+
+
+
+else {
+    echo "Conexão Estábelecida Corretamente";
+
+}
+
+// fim codo php
+?>
